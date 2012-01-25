@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_pressed="false">  
+    <!-- 
+        <color android:color="@color/red_default" />  
+ -->
+ 		<shape xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!-- 
+		    <stroke android:width="3px" android:color="@color/red_default" />  
+		    <padding android:left="2px" android:top="2px"  
+		            android:right="2px" android:bottom="2px" />  
+		    <corners android:radius="2px" />  
+		    <solid android:color="@color/red_default"/>
+ -->
+		    <padding android:left="2px" android:top="2px"  
+		            android:right="2px" android:bottom="2px" />  
+			<gradient
+					android:type="radial" 
+					android:gradientRadius="250"
+			        android:startColor="@color/red_default" 
+			        android:endColor="#FF0000" />
+		    <corners android:radius="4px" />  
+		    <stroke android:width="3px" android:color="#FF0000" />  
+		</shape> 
+    </item>  
+    <item android:state_pressed="true">  
+    <!-- 
+        <color android:color="@color/red_pressed" />  
+ -->
+ 		<shape xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!-- 
+		    <stroke android:width="3px" android:color="@color/red_pressed" />  
+ -->
+		    <stroke android:width="3px" android:color="#000000" />  
+		    <padding android:left="2px" android:top="2px"  
+		            android:right="2px" android:bottom="2px" />  
+		    <corners android:radius="2px" />  
+		    <solid android:color="@color/red_pressed"/>
+		</shape> 
+    </item>  
+</selector>
